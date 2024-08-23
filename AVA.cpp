@@ -80,14 +80,13 @@ void cadastrarPessoa()
     pessoa.nome[lenNome - 1] = '\0';
     pessoa.cpf[lenCpf - 1] = '\0';
 
-    pessoas.push_back(pessoa);
+        pessoas.push_back(pessoa);
     printf("Cadastro realizado com sucesso!\n");
 }
 
 void resumoCadastros()
 {
     int contF = 0, contM = 0;
-    printf("Nome: %s", pessoas[0].nome);
     for (int i = 0; i < pessoas.size(); i++)
     {
         if (pessoas[i].sexo == 'M' || pessoas[i].sexo == 'm')
