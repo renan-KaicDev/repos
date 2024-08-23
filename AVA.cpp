@@ -156,6 +156,7 @@ void buscarPorNascimento()
 void contarPorNascimento()
 {
     Data dtns;
+
     Data inicial;
     int contador = 0;
     printf("Data inicial[DD/MM/AAAA]: ");
@@ -174,7 +175,7 @@ void contarPorNascimento()
     {
         dtns = pessoas[i].nascimento;
 
-        if (data(dtns) >= data(inicial) || data(dtns) <= data(final))
+        if (data(dtns) >= data(inicial) && data(dtns) <= data(final))
         {
             printf("\n");
             printf("Nome: %s\n", pessoas[i].nome);
